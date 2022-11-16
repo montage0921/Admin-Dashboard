@@ -295,8 +295,8 @@ img.avatar {
   box-shadow: 1px 1px 1px 1px grey;
   border-radius: 15px;
   background-color: white;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+
   padding: 20px;
   color: grey;
   gap: 20px;
