@@ -6,10 +6,6 @@ body {
 }
 
 .content {
-  border: 1px solid black;
-}
-
-.content {
   grid-column: 2/3;
 }
 
@@ -103,23 +99,17 @@ a {
 /* header layout*/
 .header {
   display: grid;
-  grid-template-rows: auto auto;
-  margin-top: 10px;
-  margin-left: 30px;
-}
-
-/* header layout --top-row*/
-.top-row {
-  display: grid;
   grid-template-columns: 2fr 1fr;
-  align-items: center;
-
-  font-weight: 900;
-  font-size: large;
+  grid-template-rows: auto auto;
+  padding-top: 10px;
+  padding-left: 20px;
+  box-shadow: 1px 2px 3px 1px grey;
 }
 
 /* header layout --search-bar-section*/
 .search-bar-section {
+  align-self: center;
+
   display: flex;
   gap: 10px;
 }
@@ -129,7 +119,6 @@ a {
 }
 
 .search-bar-section input {
-  flex: 1;
   width: clamp(100px, 35vw, 40vw);
   border-radius: 20px;
   height: 25px;
@@ -139,7 +128,12 @@ a {
   outline: none;
 }
 
+/* header layout -- account-section*/
 .account {
+  font-weight: 900;
+  font-size: large;
+  grid-column: 2/3;
+
   display: flex;
   align-items: center;
   justify-self: center;
@@ -152,4 +146,43 @@ img.notify {
 
 img.avatar {
   height: 60px;
+}
+
+/* header layout -- greeting-section*/
+.greeting-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.greeting-section .avatar {
+  height: 100px;
+}
+
+.greeting-text p {
+  margin: 5px;
+  font-weight: bold;
+}
+
+.greeting-text #name {
+  font-size: 1.5rem;
+}
+
+/* header layout -- button-section*/
+.button-section {
+  align-self: center;
+  justify-self: center;
+
+  display: flex;
+  gap: 40px;
+}
+
+.button-section button {
+  height: 35px;
+  width: 80px;
+  border-radius: 20px;
+  border: none;
+  background-color: #bef264;
+  color: whitesmoke;
+  font-weight: bolder;
 }
