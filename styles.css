@@ -178,11 +178,10 @@ img.avatar {
   justify-self: center;
 
   display: flex;
-  gap: 40px;
+  gap: 1.5rem;
 }
 
 .button-section button {
-  flex: 1;
   height: 35px;
   width: 80px;
   border-radius: 20px;
@@ -279,4 +278,57 @@ img.avatar {
 .announce p {
   margin-top: 3px;
   color: darkgrey;
+}
+
+/* content layout--trending-section*/
+.trending-section {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 20px;
+}
+
+.trending-section h3 {
+  margin: 0;
+}
+
+.trending-content {
+  box-shadow: 1px 1px 1px 1px grey;
+  border-radius: 15px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: grey;
+  gap: 20px;
+}
+
+.trending {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.trending-name {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.trending-name p {
+  margin: 0px;
+  width: auto;
+}
+
+.trending-name > :first-child {
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.trending-name > :last-child {
+  font-size: 12px;
+}
+
+.trending img {
+  height: 60px;
+  border-radius: 30px;
 }
